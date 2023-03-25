@@ -1,0 +1,13 @@
+### NextJS
+
+# Next build dir
+
+.next
+
+# dependencies
+
+node_modules
+
+yarn.lock
+
+.DS_Store
