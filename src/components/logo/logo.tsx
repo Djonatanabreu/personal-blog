@@ -1,5 +1,5 @@
-import './logo.module.css';
+import classes from './logo.module.css';
 
 export const Logo = () => {
-  return <h1>Logo</h1>;
+  return <div className={classes.logo}>Djohn NextJs blog</div>;
 };

@@ -1,5 +1,4 @@
 import { MainNavigation } from '@/components/mainNavigation/mainNavigation';
-import './page.css';
 
 export const metadata = {
   title: 'Next.js',

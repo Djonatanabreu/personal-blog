@@ -1,4 +1,3 @@
-import './hero.module.css';
 import Image from 'next/image';
 import classes from './hero.module.css';
 
