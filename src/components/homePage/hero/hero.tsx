@@ -6,13 +6,13 @@ export const Hero = () => {
     <section className={classes.hero}>
       <div className={classes.image}>
         <Image
-          src={'/images/site/peace.jpeg'}
+          src={'/images/site/IMG_3152.jpeg'}
           alt='An image show Djohn'
           width={300}
           height={300}
         />
       </div>
-      <h1>Hi, I'm Djohn</h1>
+      <h1>Hi, I'm Patty</h1>
       <p>
         I blog about web Development - especially frontend frameworks like React
         and Angular
