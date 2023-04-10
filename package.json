@@ -20,5 +20,8 @@
     "react-dom": "18.2.0",
     "react-markdown": "^8.0.6",
     "typescript": "5.0.2"
+  },
+  "devDependencies": {
+    "ts-node": "^10.9.1"
   }
 }
