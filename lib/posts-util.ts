@@ -12,7 +12,7 @@ interface FileContent {
 
 const postsDirectory = path.join(process.cwd(), 'posts');
 
-function getPostData(fileName: string) {
+export function getPostData(fileName: string) {
   const filePath = path.join(postsDirectory, fileName);
   const fileContent = fs.readFileSync(filePath, 'utf-8');
   const matterReturn = matter(fileContent); // extract data from MD file and content
@@ -30,7 +30,7 @@ function getPostData(fileName: string) {
   return postData;
 }
 
-function getAllPosts() {
+export function getAllPosts() {
   const postFiles = fs.readdirSync(postsDirectory);
 
   const allPosts = postFiles.map((postFile) => {
@@ -46,9 +46,7 @@ function getAllPosts() {
 export const getFeaturedPosts = () => {
   const allPosts = getAllPosts();
 
-  const featuredPosts = allPosts.filter((post) => {
-    post.isFeatured;
-  });
+  const featuredPosts = allPosts.filter((post) => post.isFeatured);
 
   return featuredPosts;
 };

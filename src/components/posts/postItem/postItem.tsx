@@ -18,13 +18,7 @@ export const PostItem = ({ post }: any) => {
     <li className={classes.post}>
       <Link href={linkPath}>
         <div className={classes.image}>
-          <Image
-            alt={title}
-            height={200}
-            width={300}
-            src={imagePath}
-            layout='responsive'
-          />
+          <Image alt={title} height={200} width={300} src={imagePath} />
         </div>
         <div className={classes.content}>
           <h3>{title}</h3>

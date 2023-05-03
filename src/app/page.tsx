@@ -4,11 +4,15 @@ import './page.css';
 
 import { FeaturedPosts } from '@/components/homePage/featuredPosts/featuredPosts';
 
-export default async function Home(props: any) {
+import { getFeaturedPosts } from '../../lib/posts-util';
+
+export default function Home() {
+  const featuredPosts = getFeaturedPosts();
+
   return (
     <Fragment>
       <Hero />
-      <FeaturedPosts posts={'featuredPosts'} />
+      <FeaturedPosts posts={featuredPosts} />
     </Fragment>
   );
 }

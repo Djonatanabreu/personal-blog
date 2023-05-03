@@ -14,7 +14,7 @@ export const MainNavigation = () => {
             <Link href={'/posts'}>Posts</Link>
           </li>
           <li>
-            <Link href={'/contacts'}>Contacts</Link>
+            <Link href={'/contact'}>Contact</Link>
           </li>
         </ul>
       </nav>
